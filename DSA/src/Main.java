@@ -1,15 +1,20 @@
-import linkedList.DeleteNthElementFromLast;
 import linkedList.ListNode;
-import linkedList.PrintListNode;
+import linkedList.ListNodeUtils;
+import linkedList.MergeKSortedList;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String arg[]) {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
-        PrintListNode.printListNode(DeleteNthElementFromLast.deleteNthElementFromLast(head, 3));
+        ListNode one = new ListNode(4);
+        one.next = new ListNode(6);
+        ListNode two = new ListNode(100);
+        two.next = new ListNode(200);
+        two.next.next = new ListNode(250);
+        ListNode three = new ListNode(-10);
+        three.next = new ListNode(20);
+        three.next.next = new ListNode(1000);
+        ListNodeUtils.printListNode(MergeKSortedList.mergeKSortedList(Arrays.asList(one, two, three)));
     }
 }
 
