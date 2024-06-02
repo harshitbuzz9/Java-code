@@ -1,10 +1,15 @@
-import twoPointersSubStringPrograms.MaximumPointsYouCanObtainFromCards;
+import linkedList.DeleteNthElementFromLast;
+import linkedList.ListNode;
+import linkedList.PrintListNode;
 
 public class Main {
     public static void main(String arg[]) {
-        int[] arr = {6, 2, 3, 4, 7, 2, 1, 7, 1};
-        System.out.println("bbb" + MaximumPointsYouCanObtainFromCards.maximumPointsYouCanObtainFromCards(arr, 4));
-        System.out.print("lion King");
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        PrintListNode.printListNode(DeleteNthElementFromLast.deleteNthElementFromLast(head, 3));
     }
 }
 
